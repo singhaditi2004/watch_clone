@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch-CheckOut</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="watch_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="subconatiner">
+            <div class="left">
+                <div class="product-container">
+                    
+                    <div class="detail">
+                        <p class="brand">Redux</p>
+                        <h2 class="watchName">Analog Men's Watch</h2>
+                    </div>
+                    <div class="imgSlide">
+                        <img src="/1.png" style="width: 100%;" />
+                    </div>
+
+                    <div class="imgSlide">
+                        <img src="/2.png" style="width: 100%;" />
+                    </div>
+
+                    <div class="imgSlide">
+                        <img src="/3.png" style="width: 100%;" />
+                    </div>
+                    
+                    <div class="dots">
+                        <a class="pagination" onclick="currentSlide(1)"></a>
+                        <a class="pagination" onclick="currentSlide(2)"></a>
+                        <a class="pagination" onclick="currentSlide(3)"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="right">
+                <div class="checkout">
+                    <h2>CHECKOUT</h2>
+                    <form action="index.html" method="get">
+                        <input type="text" name="cardname" id="cardname" placeholder="Card Name">
+                        <input type="text" name="cardnumber" id="cardnumber" placeholder="Card Number">
+                        <input type="text" name="cardholdername" id="cardholdername" placeholder="Card Holder Name">
+                        <input type="text" name="expirydate" id="expirydate" placeholder="Expiry Date">
+                        <input type="text" name="cvv" id="cvv" placeholder="CVV">
+                        <input type="button" value="Complete Order">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
